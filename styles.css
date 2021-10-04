@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    font-family: 'share tech mono', monospace;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background-color: #222222;
+}
+.navbar{
+  background-color: black;
+  color:darkgreen;
+  height:9vh;
+}
+
+.nav-link{
+  color:darkgreen;
+  font-family: 'share tech mono', monospace;
+  font-size: 40px;
+  margin-right:80px;
+  margin-left:20px;
+  transition: 1s;
+  margin-top: 20px;
+}
+
+.nav-link:hover{
+  font-size: 80px;
+}
+
+.nav-item:hover{
+  background-color: darkgreen;
+  font-size: 80px;
+}
+.nav-item:active{
+  background-color: darkgreen;
+}
+
+#navbarTogglerDemo01{
+  height: 100vh;
+  width: 50%;
+  opacity:1;
+  font-size: 60px;
+  background-color: black;
+  margin-top:20px;  
+}
+
+.offcanvas{
+  color: grey;
+  background-color: black;
+  width: 100%;
+}
+.d-flex{
+  margin-top: 50px;
+}
+
+.btn-close{
+  background-color: darkgreen;
+}
+
+.landing{
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+    color: darkgreen;
+    font-family: 'share tech mono', monospace;
+    height: 100vh;
+    padding-top: 35vh;
+}
+
+.landing>h1{
+  font-size: 30px;
+  letter-spacing: 0.15em;
+  border-right:5px solid black;
+  display: inline-block;
+  margin-bottom: 50px;
+  animation-name: animated-cursor;
+  animation-duration: 500ms;
+  animation-iteration-count: 3;
+  transition: 1.5s;
+  white-space: nowrap;
+}
+
+.landing>h1:hover{
+  font-size: 40px;
+}
+
+.landing>h2{
+  font-size: 25px;
+  letter-spacing: 0.15em;
+  color: grey; 
+  border-right:5px solid black;
+  display: inline-block;
+  text-transform: none;
+  animation-name: animated-cursor;
+  animation-delay: 550ms;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  height:41px;
+}
+
+.next{
+  margin-top:100px;
+  background:url("down.png") no-repeat;
+  background-size:contain;
+  width: 80px;
+  height: 50px;
+  border:none;
+  transition: 1s;
+}
+
+.next:hover{
+  width: 120px;
+  height: 90px;
+}
+
+.summary{
+
+  display:inline-block;
+  width:100%;
+  color: darkgreen;
+  background-color: #222222;
+}
+
+.summarytext>p{
+  margin: 5px 20px;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+.summarytext{
+  background-color: black;
+  border-radius: 20px;
+  margin: 10px 20px;
+  padding: 30px;
+}
+
+h3{
+  color:grey;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 20px;
+  margin-top: 70px;
+  font-size: 33px;
+  transition: 1.5s;
+}
+
+h3:hover{
+  font-size:50px;
+  cursor:default;
+}
+
+.summary> img{
+  display: none;
+}
+
+.skills{
+  background-color:#222222;
+  display: inline-block;
+  width: 100%;
+}
+
+.skill{
+  float: right;
+  width: 65vw;
+  height:30px;
+  background-color: black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 5%;
+  border-radius:10px;
+  border: 0px solid darkgreen;
+}
+
+.skilllabel{
+  float:left;
+  margin-left: 7.5%;
+  margin-top: 20px;
+  margin-bottom:20px;
+  font-weight:bold;
+  color:black;
+  background-color: grey;
+  height: 30px;
+  width: 15%;
+  text-align: center;
+  border-radius: 10px;
+  padding-top:3px;
+}
+
+.viewskills{
+  width: 25%;
+  margin-left: 37.5%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: grey;
+  color: black;
+  text-transform: uppercase;
+}
+.projects{
+  background-color: black;
+  display: inline-block;
+  
+}
+
+.allprojects{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;   
+  flex-wrap: wrap;
+}
+
+.project{
+  border: 7px solid #333333;
+  background-color: #666666;
+  margin: 2%;
+  color: #999999;
+  font-weight: 600;
+  font-size:18px;
+  padding:10px;
+  border-radius: 5%;
+  text-transform: uppercase;
+  width:50vh;
+  height:43vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align:center;
+  padding-top:5px;
+  padding-bottom: 20px;
+}
+
+
+.project>p{
+  font-size:13px;
+  text-transform: none;
+  color: #333333;
+  padding: 10px;
+  text-align:center;
+}
+
+.contact{
+  width:90%;
+  margin-left:5%;
+  margin-bottom: 5%;
+  border-radius:10px;
+  background-color: #f2f2f2;
+}
+
+.contact>h3{
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 700;
+  color:#333333;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 3px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+}
+
+input[type=submit] {
+  background-color:#999999;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #666666;
+}
+
+
+.container {
+  padding: 20px;
+}
+
+.footerlinks{
+  background-color: #666666;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;   
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left:10%;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.footerlinks>a>img{
+  width:80px;
+  height:80px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.footerlinks>p>a{
+  color: #333333;
+}
+
+.footerlinks>p{
+  text-align: center;
+}
+
+@keyframes animated-cursor{
+  from{border-right-color: darkgreen;}
+  to{border-right-color: transparent;}
+}
+
+@media screen and (min-width:1024px) {
+  .summary> img{
+    display: block;
+    float:right;
+    margin: 10px 1%;
+    border-radius: 10px;
+    width: 41.75%;
+    margin-bottom:40px;
+    border:5px solid darkgreen;
+    background-color: black;
+}
+.summarytext{
+   display: block;
+   float:left;
+   width: 50%;
+   box-sizing: border-box;
+   font-size:50px;
+}
+.landing>h1{
+  font-size:80px;
+}
+.landing>h1:hover{
+  font-size:100px;
+}
+
+.landing>h2{
+  font-size: 55px;
+}
+
+h3{
+  font-size: 55px;
+}
+h3:hover{
+  font-size:70px;
+}
+  }
+
+  @media screen and (max-width:1023px) {
+    .landing>h1{
+      font-size:35px;
+    }
+    .landing>h1:hover{
+      font-size:45px;
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    .landing>h1{
+      font-size:65px;
+    }
+    .landing>h1:hover{
+      font-size:45px;
+    }
+  }

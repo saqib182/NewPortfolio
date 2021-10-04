@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <title>Saqib Sadiq</title>
+</head>
+<body onload="typing()">  
+  <nav class="navbar navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#landing">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#summary">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <div id="landing" class="landing">
+        <h1 id="myName"></h1>
+        <br>
+        <h2 id="myJob"></h2>
+        <br>
+        <button class="next" onclick="location.href='#summary'"></button>
+    </div>
+    <div id="summary" class="summary">
+      <h3>Summary</h3>
+      <div class="summarytext">
+        <p>Hello and welcome to my portfolio.</p> <br>
+        <p>I'm Saqib Sadiq, a talented, self-motivated Web Developer, currently based in Birmingham, U.K.</p><br>
+        <p>Having graduated from the University of Sheffield in the summer of 2018, with a degree in Electronic and Electrical Engineering, I decided to pursue a career in Web Development.</p><br>
+        <p>With a rapidly growing skill-set, ranging from technologies such as HTML, CSS, JavaScript and PHP, as well as my creative talent, I am more than capable of developing rich, user-friendly interfaces with ease.</p>
+      </div>
+      <img src="Saqib_Sadiq.png" alt="saqib">
+      </div>    
+      <div id="skills" class="skills">
+        <h3>Skills</h3>
+        <p class="skilllabel">HTML</p><div id="htmlskill" class="skill"></div>
+        <p class="skilllabel">CSS</p><div id="cssskill" class="skill"></div>
+        <p class="skilllabel">JS</p><div id="jsskill" class="skill"></div>
+        <p class="skilllabel">PHP</p><div id="phpskill" class="skill"></div>
+        <p class="skilllabel">PY</p><div id="pythonskill" class="skill"></div>
+        <p class="skilllabel">SQL</p><div id="awsskill" class="skill"></div>
+        <p class="skilllabel">REACT</p><div id="reactskill" class="skill"></div>
+        <p class="skilllabel">AWS</p><div id="sqlskill" class="skill"></div> 
+        <button class="viewskills"> Click Me!</button> 
+      </div>   
+      <div id="projects" class="projects">
+        <h3>Projects</h3>
+        <div class="allprojects">
+            <div class="project">Pending</div>
+            <div class="project">
+                [Legacy] Portfolio  <br>
+                (HTML, CSS, JavaScript)
+
+               <p> A simple static website, detailing my skills, experience and other useful information. </p> 
+                <a href="https://github.com/saqib182/Portfolio_Website">
+                    <img src="GitHubLogo.png" >
+                </a>
+            </div>
+            <div class="project">
+                Snake <br>
+                (C++)
+
+               <p> A simple snake game developed using C++, utilising OOP principles.</p> 
+                <a href="https://github.com/saqib182/OOP_Cpp_SnakeGame">
+                    <img src="GitHubLogo.png">
+                </a>
+            </div>
+            <div class="project">
+              Maths Website <br> (HTML/CSS)
+              <p>A simple static webpage showcasing skills in HTML/ CSS.</p>
+              <a href="https://github.com/saqib182/Maths_Website">
+                <img src="GitHubLogo.png">
+            </a>
+            </div>
+            <div class="project">
+              Maths Multiplication Game <br> (HTML/CSS/JS)
+              <p>A simple game designed to test a user's mathematical capabilities.</p>
+              <a href="https://github.com/saqib182/Maths_Multiplication_Game">
+                <img src="GitHubLogo.png">
+            </a>
+            </div>
+            <div class="project">Pending</div>
+        </div>
+      </div> 
+      <div id="contact" class="contact">
+        <h3>Contact</h3>
+        <div class="container">
+            <form action="">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" name="phone" placeholder="Your contact number.." required minlength="7" maxlength="10">
+          
+              <label for="question">Message:</label>
+              <textarea id="message" name="message" placeholder="Write a message..." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+      </div>
+      <div id="footer" class="footer">
+        <div id="footerlinks" class="footerlinks">
+          <a href="https://github.com/saqib182">
+            <img src="GitHubLogo.png" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/in/saqib-sadiq-b62804168/?originalSubdomain=uk">
+            <img src="linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="CV.pdf">
+            <img src="cv.png" alt="GitHub">
+          </a>
+          <p>Logos created via <a href="https://logomakr.com/">https://logomakr.com/</a></p>
+        </div>
+      </div>
+</body>
+</html>
+
+<!-- create footer with credits:
+
+    https://logomakr.com/ for logos.
+
+-->
